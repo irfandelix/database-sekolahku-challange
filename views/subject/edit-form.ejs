@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/meta.ejs') %>
+    <title>Edit Subject</title>
+  </head>
+  <body>
+    <div class="text-center">
+      <h1>Edit Data Subject</h1>
+      <h4><a href="/subject">Show All Data</a></h4>
+    </div>
+    <div class="text-center mx-aut0 mt-3">
+      <form action="/subject/edit/<%= data.id %>" method="post">
+        <div>
+          <label for="nama_pelajaran">Nama Pelajaran</label><br />
+          <input
+            type="text"
+            name="nama_pelajaran"
+            id="nama_pelajaran"
+            value="<%= data.nama_pelajaran %>"
+            required
+          /><br /><br />
+        <div>
+          <input type="submit" value="Edit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

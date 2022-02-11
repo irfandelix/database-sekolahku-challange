@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "first_name": "Joko",
+    "last_name": "Widuri",
+    "email": "risebelas@sekolah.id",
+    "gender": "biner",
+    "birth_date": "1945-08-17"
+  },
+  {
+    "id": 2,
+    "first_name": "Lukman",
+    "last_name": "Riki",
+    "email": "lukmanriki@sekolah.id",
+    "gender": "male",
+    "birth_date": "2004-04-13"
+  },
+  {
+    "id": 3,
+    "first_name": "icanq",
+    "last_name": "qnaci",
+    "email": "icanq@gmail.com",
+    "gender": "female",
+    "birth_date": "2020-11-05"
+  },
+  {
+    "id": 4,
+    "first_name": "Ichsan",
+    "last_name": "Natawijaya",
+    "email": "icanq@gmail.com",
+    "gender": "female",
+    "birth_date": "2020-11-10"
+  },
+  {
+    "id": 5,
+    "first_name": "kakak",
+    "last_name": "aaa",
+    "email": "aaa@mail.com",
+    "gender": "male",
+    "birth_date": "2020-11-03"
+  }
+]

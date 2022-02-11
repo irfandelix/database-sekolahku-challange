@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/meta.ejs') %>
+    <title>Halaman Murid</title>
+  </head>
+  <body>
+    <div class="text-center">
+      <h1>Data Murid</h1>
+      <button class="btn btn-primary">
+        <a href="tambahmurid" class="text-white">Tambah Murid</a>
+      </button>
+      <table class="table mt-4 mx-auto w-75">
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>first name</th>
+            <th>last name</th>
+            <th>email</th>
+            <th>gender</th>
+            <th>birth date</th>
+            <th>ACTIONS</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% data.forEach((murid) => { %>
+            <tr>
+              <% for(const key in murid){ %>
+                <td> <%= murid[key] %></td>
+              <% } %>
+              <td><a href="/murid/edit/<%= murid.id%>">EDIT</a></td>
+            </tr>
+          <% } ) %>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

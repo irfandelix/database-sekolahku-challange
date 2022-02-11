@@ -1,0 +1,25 @@
+{
+  "name": "c6-express-pg-ejs",
+  "version": "1.0.0",
+  "description": "BIKIN APLIKASI SEKOLAHAN (SCHOOL APPS) ADA TEACHER, STUDENTS, SUBJECTS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/berbinarbinar/c6-express-pg-ejs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/berbinarbinar/c6-express-pg-ejs/issues"
+  },
+  "homepage": "https://github.com/berbinarbinar/c6-express-pg-ejs#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "pg": "^8.7.3"
+  }
+}

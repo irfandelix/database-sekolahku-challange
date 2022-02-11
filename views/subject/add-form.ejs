@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/meta.ejs') %>
+    <title>Tambah Mata Pelajaran</title>
+  </head>
+  <body>
+    <h1 class="text-center mt-3">Tambah Mata Pelajaran</h1>
+    <div class="text-center mx-auto mt-5">
+      <form action="/api/v1/tambahsubject" method="post">
+        <div>
+          <label for="nama_pelajaran">Mata Pelajaran</label><br />
+          <input
+            type="text"
+            name="nama_pelajaran"
+            id="nama_pelajaran"
+            required
+          /><br /><br />
+        </div>
+        <div>
+          <input type="submit" value="Add New Subject" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

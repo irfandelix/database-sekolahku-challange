@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/meta.ejs') %>
+    <title>Edit Guru</title>
+  </head>
+  <body>
+    <div class="text-center">
+      <h1>Edit Data Guru</h1>
+      <h4><a href="/guru">Show All Data</a></h4>
+    </div>
+    <div class="text-center mx-aut0 mt-3">
+      <form action="/guru/edit/<%= data.id %>" method="post">
+        <div>
+          <label for="first_name">First Name</label><br />
+          <input
+            type="text"
+            name="first_name"
+            id="first_name"
+            value="<%= data.first_name %>"
+            required
+          /><br /><br />
+        </div>
+        <div>
+          <label for="last_name">Last Name</label><br />
+          <input
+            type="text"
+            name="last_name"
+            id="last_name"
+            value="<%= data.last_name %>"
+            required
+          /><br /><br />
+        </div>
+        <div>
+          <label for="email">Email</label><br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            value="<%= data.email %>"
+            required
+          /><br /><br />
+        </div>
+        <div>
+          <label for="gender">Gender</label><br />
+          <label
+            ><input type="radio" name="gender" value="female" <%= data.gender
+            === "female" ? 'checked' : '' %> >Female</label
+          >
+          <label
+            ><input type="radio" name="gender" value="male" <%= data.gender ===
+            "male" ? 'checked' : '' %> >Male</label
+          >
+        </div>
+        <br /><br />
+        <div>
+          <input type="submit" value="Edit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

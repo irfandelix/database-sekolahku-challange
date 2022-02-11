@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/meta.ejs') %>
+    <title>Tambah Murid</title>
+  </head>
+  <body>
+    <h1 class="text-center mt-3">Tambah Murid Baru</h1>
+    <div class="text-center mx-auto mt-5">
+      <form action="/api/v1/tambahmurid" method="post">
+        <div>
+          <label for="first_name">First Name</label><br />
+          <input
+            type="text"
+            name="first_name"
+            id="first_name"
+            required
+          /><br /><br />
+        </div>
+        <div>
+          <label for="last_name">Last Name</label><br />
+          <input
+            type="text"
+            name="last_name"
+            id="last_name"
+            required
+          /><br /><br />
+        </div>
+        <div>
+          <label for="email">Email</label><br />
+          <input type="email" name="email" id="email" required /><br /><br />
+        </div>
+        <div>
+          <label for="birth_date">Birthdate</label><br />
+          <input type="date" name="birth_date" required /><br /><br />
+        </div>
+        <div>
+          <label for="gender">Gender</label><br />
+          <label
+            ><input type="radio" name="gender" value="female" />Female</label
+          >
+          <label><input type="radio" name="gender" value="male" />Male</label>
+        </div>
+        <br /><br />
+        <div>
+          <input type="submit" value="Add New Student" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
